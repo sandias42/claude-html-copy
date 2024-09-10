@@ -28,7 +28,9 @@ How to get the HTML? Naively doing Save Page As -> .html will fail, neglecting d
 I don't trust random chrome plugins so I made what might be the stupidest, shortest plugin that you can code review in < 1 minute. It now takes two clicks. 
 
 ### Why a random sample if the html is too large?
-About 2/3 times I've used this, the OuterHTML is too large to paste into claude. This plugin aims to remove extra steps, like manually selecting a section of html to share with claude, while staying stupidly simple. Other simple rules would be to always truncate to just the first part of the html, or just the last part. But the pages I tested varied on whether the semantically interesting parts were at the beginning, end or somewhere in between. There is certainly a better way to do this then taking a random chunk. But its a very simple solution and you can always copy repeatedly until claude sees the context you intended. 
+About 2/3 times I've used this, the OuterHTML is too large to paste into claude. This plugin aims to remove extra steps, like manually selecting a section of html to share with claude, while staying stupidly simple. Other simple rules would be to always truncate to just the first part of the html, or just the last part. But the pages I tested varied on whether the semantically interesting parts were at the beginning, end or somewhere in between. There is certainly a better way to do this then taking a random chunk, but this let me keep the code stupidly simple while allowing it to be possible to get the right context chunk. 
+
+My dumb workflow for large HTMLs is to ask claude if the sample contains what I'm curious about, and copy again into a new chat if it doesn't (repeat) until it sees what I wanted. 
 
 If you want to manually select the region to paste into claude, you can just click the toolbar icon and paste into a text file. 
 
