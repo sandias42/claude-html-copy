@@ -21,7 +21,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
             let startIndex = Math.floor(Math.random() * (html.length - samplesize + 1));
             sample = html.slice(startIndex, startIndex + samplesize);
         }
-        console.log(`HTML Sample string length: ${sample.length}`);
+        console.log(`HTML total string length: ${html.length}; Sample string length: ${sample.length}`);
         navigator.clipboard.writeText(sample);
       }
     });
