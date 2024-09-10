@@ -1,7 +1,7 @@
 # claude-html-copy
 Dead-simple plugin for easy copying of html context for claude.
 
-Right click to copy a random chunk of the current page's (Outer) HTML to clipboard, small enough to paste into claude.
+Right click to copy a random chunk of the current page's (Outer) HTML to clipboard. It will always be small enough to paste into claude.
 ![Example usage](./images/readme_example.jpeg)
 
 Click the toolbar icon to copy the full OuterHTML to clipboard (for example, as input to the python parser claude wrote from seeing your snippet).
