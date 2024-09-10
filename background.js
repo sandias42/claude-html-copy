@@ -14,8 +14,14 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
         // Got this string length by empirically testing, may vary
         let samplesize = 300000;
         let html = document.documentElement.outerHTML;
-        let startIndex = Math.floor(Math.random() * (html.length - samplesize + 1));
-        let sample = html.slice(startIndex, startIndex + samplesize);
+        let sample;
+        if (html.length <= samplesize) {
+            sample = html;
+        } else {
+            let startIndex = Math.floor(Math.random() * (html.length - samplesize + 1));
+            sample = html.slice(startIndex, startIndex + samplesize);
+        }
+        console.log(`HTML Sample string length: ${sample.length}`);
         navigator.clipboard.writeText(sample);
       }
     });
