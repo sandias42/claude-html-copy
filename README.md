@@ -1,2 +1,2 @@
 # claude-html-copy
-A dead-simple chrome plugin for copying html to claude.
+Dead-simple plugin for easy copying of html context for claude.
