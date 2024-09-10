@@ -10,7 +10,7 @@ Click the toolbar icon to copy the full OuterHTML to clipboard (for example, as 
 
 Should work on any chromium browser. Tested with Chrome and Brave (brave://extensions).
 
-If you want to use the full html download, then after install: 
+If you want to use the toolbar icon for full html download, then after install: 
 
 `chrome://extensions -> claude-html-copy "Details" -> Pin to toolbar (On)`
 
